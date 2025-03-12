@@ -1,6 +1,8 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Checkout from '../Checkout/Checkout';
+import SelectPizza from '../SelectPizza/SelectPizza';
+import CustomerInfo from '../CustomerInfo/CustomerInfo';
 
 function App() {
 
@@ -14,8 +16,8 @@ function App() {
         <img src='images/pizza_photo.png' />
         <p>Pizza is great.</p>
         <Routes>
-          {/* <Route path='/' element={<orders />}/> */}
-          {/* <Route path='/orders' element={Orders}></> */}
+          <Route path='/' element={<SelectPizza />}/>
+          <Route path='/CustomerInfo' element={<CustomerInfo />}/>
           {/* <Route path='/cart' element={<cart />}/> */}
           <Route path='/checkout' element={<Checkout />}/>
         </Routes>
